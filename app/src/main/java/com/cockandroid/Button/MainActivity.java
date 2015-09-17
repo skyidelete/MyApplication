@@ -1,4 +1,4 @@
-package com.cockandroid.baseapp;
+package com.cockandroid.Button;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
