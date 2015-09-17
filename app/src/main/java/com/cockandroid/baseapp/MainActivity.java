@@ -1,6 +1,8 @@
 package com.cockandroid.baseapp;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,7 +28,29 @@ public class MainActivity extends Activity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.nate.com"));
+                startActivity(myIntent);
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:911"));
+                startActivity(myIntent);
+            }
+        });
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Intent.ACTION_PICK);
+                myIntent.setType(android.provider.MediaStore.Images.Media.CONTENT_TYPE);
+                startActivity(myIntent);
+            }
+        });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
