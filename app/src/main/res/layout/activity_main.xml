@@ -11,7 +11,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button1"
-        android:text="@string/strBtn1"
-        android:background="@android:color/holo_red_light"></Button>
+        android:text="@string/strBtn2"
+        android:background="@android:color/holo_green_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="@string/strBtn3"
+        android:background="@android:color/holo_orange_light"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentStart="true"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        android:text="@string/strBtn4"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"></Button>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:text="@string/strBtn5"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"></Button>
 
 </RelativeLayout>

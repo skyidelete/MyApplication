@@ -6,5 +6,7 @@
     <string name="strBtn1">This is Button</string>
     <string name="strBtn2">네이트 홈페이지 열기</string>
     <string name="strBtn3">911 응급전화 걸기</string>
+    <string name="strBtn4">갤러리 열기</string>
+    <string name="strBtn5">끝내기</string>
 
 </resources>
