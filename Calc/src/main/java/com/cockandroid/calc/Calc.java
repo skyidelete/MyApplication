@@ -65,7 +65,7 @@ public class Calc extends Activity {
                 else
                     result = num1 % num2;   break;
         }
-        resultText.setText("계산 결과 : " + result.floatValue());
+        resultText.setText("계산 결과 : " + result.toString());
     }
 
     @Override
