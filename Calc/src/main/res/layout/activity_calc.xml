@@ -1,11 +1,83 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Calc">
+    android:layout_height="match_parent"
+    tools:context=".Calc"
+    android:padding="0dp">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/Input1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:hint="숫자 1"
+        android:inputType="number|numberDecimal|numberSigned" />
+    <EditText
+        android:id="@+id/Input2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="숫자 2"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/Input1"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/PlusBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="더하기"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/Input2"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/MinusBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="빼기"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/PlusBtn"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/MultiBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="곱하기"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/MinusBtn"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/DivBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나누기"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/MultiBtn"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+    <Button
+        android:id="@+id/RemainderBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="나머지 값"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/DivBtn"
+        android:layout_alignParentStart="true"
+        android:onClick="onClick"/>
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#FF0000"
+        android:text="계산 결과 : "
+        android:layout_margin="5dp"
+        android:layout_below="@+id/RemainderBtn"
+        android:layout_alignParentStart="true"
+        />
+
+
 
 </RelativeLayout>
