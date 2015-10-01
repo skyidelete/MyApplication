@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Image">
+
+    <TextView
+        android:text="선택을 시작하시겠습니까?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView01"
+        android:textSize="20dp" />
+    <Switch
+        android:text="시작함"
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView01"
+        android:layout_alignParentStart="true"
+        android:textSize="15dp" />
+    <TextView
+        android:text="좋아하는 안드로이드 버전은?"
+        android:id="@+id/textView02"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp" />
+    <RadioGroup
+        android:id="@+id/Rgroup01"
+        android:visibility="invisible"
+        android:layout_below="@+id/textView02"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/RdoJ"
+            android:text="젤리빈 (4.3)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/RdoK"
+            android:text="킷켓 (4.4)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/RdoL"
+            android:text="롤리팝 (5.0)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/imgVer"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/Rgroup01"
+        android:layout_alignParentStart="true"/>
+    <Button
+        android:id="@+id/btnExit"
+        android:text="종료"
+        android:visibility="invisible"
+        android:layout_below="@+id/imgVer"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/btnClear"
+        android:text="처음으로"
+        android:visibility="invisible"
+        android:layout_below="@+id/btnExit"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" />
+</RelativeLayout>
