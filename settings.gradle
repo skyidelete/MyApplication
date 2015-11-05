@@ -1,1 +1,1 @@
-include ':app', ':Calc', ':image', ':calc2'
+include ':app', ':Calc', ':image', ':calc2', ':Dialog'
