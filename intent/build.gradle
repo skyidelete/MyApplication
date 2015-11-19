@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.cockandroid.IntentTest"
+        applicationId "com.cockandroid.intentTemp"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
