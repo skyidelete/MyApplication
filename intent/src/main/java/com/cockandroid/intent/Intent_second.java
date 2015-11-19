@@ -1,13 +1,12 @@
 package com.cockandroid.intent;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 
 /**
  * Created by com on 2015-11-19.
  */
-public class intent_secondTemp extends Activity {
+public class Intent_second extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,7 +14,7 @@ public class intent_secondTemp extends Activity {
         setTitle("Second Activity");
         int value = 0;
         boolean divByZero = false;
-        Intent inIntent = getIntent();
+        android.content.Intent inIntent = getIntent();
 
         switch(inIntent.getStringExtra("Type")) {
             case "plus":
@@ -37,7 +36,7 @@ public class intent_secondTemp extends Activity {
                 break;
         }
 
-        Intent outIntent = new Intent(getApplicationContext(), intentTemp.class);
+        android.content.Intent outIntent = new android.content.Intent(getApplicationContext(), Intent.class);
         outIntent.putExtra("Value", value);
         if(divByZero)   setResult(100, outIntent);
         else            setResult(RESULT_OK, outIntent);
