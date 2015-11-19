@@ -7,7 +7,7 @@ import android.os.Bundle;
 /**
  * Created by com on 2015-11-19.
  */
-public class intent_secondTemp extends Activity {
+public class Intent_secondTest extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +37,7 @@ public class intent_secondTemp extends Activity {
                 break;
         }
 
-        Intent outIntent = new Intent(getApplicationContext(), intentTemp.class);
+        Intent outIntent = new Intent(getApplicationContext(), IntentTest.class);
         outIntent.putExtra("Value", value);
         if(divByZero)   setResult(100, outIntent);
         else            setResult(RESULT_OK, outIntent);
