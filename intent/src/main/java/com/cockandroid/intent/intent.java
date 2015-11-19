@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class IntentTTMP extends Activity {
+public class intent extends Activity {
 
     EditText input1, input2;
     RadioGroup rGroup01;
@@ -34,7 +34,7 @@ public class IntentTTMP extends Activity {
         btnCalc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                android.content.Intent intent = new android.content.Intent(getApplicationContext(), Intent_secondTTMP.class);
+                android.content.Intent intent = new android.content.Intent(getApplicationContext(), intent_second.class);
 
                 if(input1.getText().toString().isEmpty() || input2.getText().toString().isEmpty()) {
                     Toast.makeText(getApplicationContext(), "숫자를 입력해주세요", Toast.LENGTH_SHORT).show();

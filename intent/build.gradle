@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "com.cockandroid.IntentTTMP"
+        applicationId "com.cockandroid.intent"
         minSdkVersion 21
         targetSdkVersion 23
         versionCode 1
