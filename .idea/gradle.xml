@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/image" />
             <option value="$PROJECT_DIR$/intent" />
             <option value="$PROJECT_DIR$/mydiary" />
+            <option value="$PROJECT_DIR$/sqlite" />
             <option value="$PROJECT_DIR$/webview" />
           </set>
         </option>
