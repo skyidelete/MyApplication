@@ -45,7 +45,7 @@ public class Dialog extends Activity {
                 UserName_Dialog = (EditText) dialogView.findViewById(R.id.UserName_Dialog);
                 UserEmail_Dialog = (EditText) dialogView.findViewById(R.id.UserEmail_Dialog);
                 dlg.setTitle("사용자 정보 입력");
-                dlg.setIcon(R.drawable.star);
+
                 dlg.setView(dialogView);
 
                 name_shared = UserName.getText().toString();

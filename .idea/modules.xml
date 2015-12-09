@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Calc/Calc.iml" filepath="$PROJECT_DIR$/Calc/Calc.iml" />
       <module fileurl="file://$PROJECT_DIR$/Dialog/Dialog.iml" filepath="$PROJECT_DIR$/Dialog/Dialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adapter/adapter.iml" filepath="$PROJECT_DIR$/adapter/adapter.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/calc2/calc2.iml" filepath="$PROJECT_DIR$/calc2/calc2.iml" />
       <module fileurl="file://$PROJECT_DIR$/diary/diary.iml" filepath="$PROJECT_DIR$/diary/diary.iml" />
