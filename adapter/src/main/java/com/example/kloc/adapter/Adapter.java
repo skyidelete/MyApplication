@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.Image;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -14,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 public class Adapter extends Activity {
@@ -84,12 +86,18 @@ public class Adapter extends Activity {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            ImageView imageView = new ImageView(context);
-            imageView.setLayoutParams(new GridView.LayoutParams(100, 150));
-            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
-            imageView.setPadding(5, 5, 5, 5);
-
+            View movieList = getLayoutInflater().inflate(R.layout.gridview01, null);
+            movieList.setPadding(5, 5, 5, 5);
+            //movieList.setLayoutParams(new GridView.LayoutParams(100, 150));
+            ImageView imageView = (ImageView) movieList.findViewById(R.id.gridImage);
+            TextView textTitle = (TextView) movieList.findViewById(R.id.gridTitle);
+            //ImageView imageView = new ImageView(context);
+            //imageView.setLayoutParams(new GridView.LayoutParams(100, 150));
+            //imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+            //imageView.setPadding(5, 5, 5, 5);
             imageView.setImageResource(posterID[position]);
+
+            textTitle.setText(getTitle(posterID[position]));
 
             final int pos = position;
             imageView.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +114,7 @@ public class Adapter extends Activity {
 
                 }
             });
-            return imageView;
+            return movieList;
         }
     }
 
